@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -56,7 +57,7 @@
 
               $headers = fgetcsv($handle, 1024, ',');
               $headers = array_map('strtolower', $headers);
-              
+
               $complete = array();
 
               while ($row = fgetcsv($handle, 1024, ',')) {
